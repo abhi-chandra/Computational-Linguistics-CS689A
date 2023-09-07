@@ -1,0 +1,55 @@
+Assignment 1 
+Readme file
+
+I have sampled the sentences from the corpus and stored it in the nlp10.txt file.
+I have used nlp10.txt file throught my assignment.
+
+
+Firstly, I have defined a function to get rid of all non-language characters. 
+I have also defined a list of vowels, consonants and Maatras.
+
+ I have used the above function and got rid of all non-language Characters.
+ I have defined a function to do unicode correction i.e def corrc_unicode.
+ I have defined a function to find syllables i.e def corrc_syllable.
+ 
+1a) In this problem, I have called the above corrc_unicode function.
+			The corrc_unicode function has a set of rules to do unicode correction.
+			You may see the definition of corrc_unicode function to know the set of rules.
+
+1b) I have already got rid of all the non_language characters before starting my 1st question.
+
+2a)The jupyer cell Named  :- "Finding out white spaced tokens,characters,syllables and their frequencies along with their bigram frequencies"
+	I have also made function calls to corrc_unicode and corrc_syllable from this cell.
+	I have splitted the lines in to tokens using split method
+	I have found out the frequencies of each token Freqdist() method.
+	I have found out syllables of each token and their frequencies.
+	I have found out characters of each token and their frequencies.
+	I have Found out bi-gram frequencies of syllables and characters using nltk library.
+
+	
+3a & b) I have executed BPE for on nlp10.txt file with different vocabulary sizes i.e. 1k,2k,5k,10k,30k,50k.
+	You can see them under different cells named: " Implementing byte pair encoding for vocabulary size of __"
+
+
+3)c) For each token thus found, find the characters and the syllables. Find the unigram and bigram frequencies of tokens , syllables and characters.
+	You can find the corresponding code under the cell headings
+	3)c) Finding the characters of tokens found in BPE, and their frequencies along with their bi gram character frequencies.
+	3)c) Finding the syllables of tokens found in BPE, and their frequencies along with their bi gram syllable frequencies.
+	
+	
+4) I have calculated the Precision, recall and F-scorre for each vocabulary size.
+
+5) I have extracted lemmas under the cell named  "5) Extract a list of lemmas  found from the UDtagged files."
+   I have extracted surface forms under the cell named  "5) Extract a list of surface forms  found from the UDtagged files."
+   
+   
+   
+6) I have drawn a plot to check if the frequency of whitespace-separated words, BPE tokens, syllables, follow zipifian distribution
+	The above code can be found out under the cell named "Finding if the frequencies of _____ follow zipifian distribution"
+	
+	
+7a) have extracted the suffix given a surface form and a lemma
+	I have also listed 50 common suffixes.
+	You may see the code under the cell named:"7 a)Finding out suffix for a given surface form and lemma  Listing the 50 most common suffixes."
+
+7b) I have also listed some suffixes based on knowledge.

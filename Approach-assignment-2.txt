@@ -1,0 +1,81 @@
+Assignment 2 
+Readme file
+
+
+1)a)In this question, i have found out the frequencies of POS tag of words
+	I have firstly, extracted the POS tags and the word for each word from the conllu file.
+	I have created a tuple which consists of POS tag and the corressponding word.
+	Now i have created a dictionary with tuple as a key and their frequencies as the value.
+	I have also found the frequencies of indivudial POS tags. i.e. how many times noun has occured,
+	how many times verb has occured etc
+	I have used the tag , and combined all the their counts.
+	
+	
+1)b)In this question, i have found out the 50 most frequent words for each POS tags.
+	I have used the output of question 1)a) to solve the question 1)b).
+	I have used nested dictionary.
+	my key in the nested dictionary is the POS tag and the value is another dictionary.
+	value consists of words and their frequencies.
+	
+	
+1)c)In this question i have found out the frequencies of gender, case and number of words separately.
+	I have firstly, extracted the case,gender and tags and number of each word from the conllu file.
+	I have used the same approach of first question , where in here i made a tuple consisting of (case/gender/number) and the word
+	I have made a dictionary where the key is the above tuple and value is theitr frequencies.
+	
+	
+1)d)In this question, I have found out the 50 most frequent combinations of gender, case and number as a 3-tuple.
+	I have firstly, extracted the case,gender and tags and number of each word from the conllu file.
+	I have used the same approach of first question , where in here i made a tuple consisting of (case and gender and number) 
+	I have made a dictionary where the key is the above tuple and value is theitr frequencies.
+	I have outputed them in the descending order.
+	
+1)e)In this question, i have found out the frequencies of POS tag of head words
+	I have firstly, extracted the POS tags and the head words for each word from the conllu file.
+	I have created a tuple which consists of POS tag and the corressponding haed word.
+	Now i have created a dictionary with tuple as a key and their frequencies as the value.
+	I have also found the frequencies of indivudial POS tags. i.e. how many times noun has occured for the head words,
+	how many times verb has occured for the head words etc
+	I have used the tag , and combined all the their counts.
+	
+	
+	
+1)f) In this question, , i have found out  For each such 2-tuple  the frequencies corressponding to each realtion and in total as well.
+	In this question, i have used the nested dictionary.
+	the key in the dictionary is a tuple which consists of two POS tags of those 2 words.
+	and the value is another dictionary consisting of key and value again.
+	the key is the relation and the value is their frequencies.
+	Now i will check if the corressponding tuple has any realtion if yes i will add to it . if not i will just assign it to 1.
+	and finally to find out the frequenciesin total , for each key i will add all the frequencies of it.
+	
+	
+1)(g)In this question, For each dependency relation R i have listed the frequencies separately for each 2-tuple and in total.
+	I have used the output of question 1)f) to solve the question 1)g).
+	I have used nested dictionary.
+	my key in the nested dictionary is the relation and the value is another dictionary.
+	value consists of POS tag tuples and their frequencies.
+	and finally to find out the frequencies in total , for each key i will add all the frequencies of it.
+
+
+2)a) In this question, I have  Fine-tuned the pre-trained BERT model for the UPOS prediction task.
+	Intially, with already given parameters the accuracy was around 28%.
+	Then I have tried to change the parmeters.
+	In that process i have increased the number of epochs to 5 and batch size to 5 with learning rate as 2e-4.
+	In the above case the accuracy was almost 88%
+	Then i have increased the batch size and number of epochs to 10 by keeping the learning rate as same.
+	In the above case i have obtained an accuracy of 91.3%.
+
+
+2)b 2)b)The micro precison is 0.8881578947368421.
+        The micro recall is 0.8970099667774086. 
+        The micro F1 score is 0.8925619834710744.
+        The macro Precision is 0.886172488565.
+        The macro recall is 0.89789049438.
+         The macro F1 score is 0.891990695023.
+
+
+
+
+
+
+
